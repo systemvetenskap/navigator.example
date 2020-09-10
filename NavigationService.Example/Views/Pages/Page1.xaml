@@ -1,4 +1,4 @@
-﻿<Page x:Class="NavigationService.Example.Page2"
+﻿<local:BasePage x:TypeArguments="local:Page1ViewModel" x:Class="NavigationService.Example.Page1"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -6,13 +6,12 @@
       xmlns:local="clr-namespace:NavigationService.Example"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="Page2">
+      Title="Page1">
 
     <Grid>
         <StackPanel>
-            <TextBlock Text="Här är sida två. Antingen visas dummytext, eller spelarens fullname. Allt beror på vilken konstruktor som används" />
-            <TextBlock Text="{Binding Text}" />
+        <TextBlock Text="Nu är sida 1 laddad. Den har inga indataparametrar" />
+        <Button Content="Gå till sida 2 med specifik modell" Command="{Binding NavigationCommand}"/>
         </StackPanel>
-            
     </Grid>
-</Page>
+</local:BasePage>

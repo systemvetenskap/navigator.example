@@ -16,8 +16,11 @@ namespace NavigationService.Example
 
         public void GotoPage()
         {
-            var page = new Page1();
-            navigationService.Navigate(page);
+            Cpu player = new Cpu{ Fullname = "R2D2" };
+            var model = new Page2ViewModel(player);
+            var page = new Page2(model);
+           // var page = new Page2();
+            NavigationService.Navigate(page);
         }
 
         public Page1ViewModel(IFullname player)

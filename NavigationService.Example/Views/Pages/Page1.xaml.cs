@@ -17,12 +17,12 @@ namespace NavigationService.Example
     /// <summary>
     /// Interaction logic for Page1.xaml
     /// </summary>
-    public partial class Page1 : Page
+    public partial class Page1 : BasePage<Page1ViewModel>
     {
         public Page1()
         {
             InitializeComponent();
-            DataContext = new Page1ViewModel();
+         //   DataContext = new Page1ViewModel();
         }
 
         

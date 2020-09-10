@@ -8,7 +8,7 @@ namespace NavigationService.Example
 {
     public class BaseViewModel : INotifyPropertyChanged
     {
-        protected static System.Windows.Navigation.NavigationService navigationService { get; } = (Application.Current.MainWindow as MainWindow).mainFrame.NavigationService;
+        protected static System.Windows.Navigation.NavigationService NavigationService { get; } = (Application.Current.MainWindow as MainWindow).mainFrame.NavigationService;
         public event PropertyChangedEventHandler PropertyChanged;
     }
 }

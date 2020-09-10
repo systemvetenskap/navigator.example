@@ -18,7 +18,7 @@ namespace NavigationService.Example
         public void GotoPage()
         {
             var page = new Page1();
-            navigationService.Navigate(page);
+            NavigationService.Navigate(page);
         }
     }
 }

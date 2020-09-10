@@ -11,9 +11,7 @@
             <TextBlock Text="Detta är huvudsidan. Här skulle ni kunna lägga en huvudmeny" />
             <TextBlock Text="Har tre sidor som ni kan navigera till via knappar. Eller via respektive page" />
             <WrapPanel>
-                <Button Content="Visa sida 1" MinWidth="34" />
-                <Button Content="Byter sida med en vymodell" Command="{Binding NavigationCommand}" MinWidth="34" />
-                <Button Content="Visa Sida 2 (som Cpu-spelare)"  MinWidth="34" />
+                <Button Content="Byt sida via vymodell" Command="{Binding NavigationCommand}" MinWidth="34" />
             </WrapPanel>
             <Frame x:Name="mainFrame" />
         </StackPanel>
