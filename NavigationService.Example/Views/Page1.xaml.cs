@@ -22,13 +22,9 @@ namespace NavigationService.Example
         public Page1()
         {
             InitializeComponent();
+            DataContext = new Page1ViewModel();
         }
 
-        private void GotoPage2_Click(object sender, RoutedEventArgs e)
-        {
-            // med specifik vymodell i konstruktorn
-            IFullname player = new Person() { Firstname = "Erik", Lastname = "Öberg" };
-            NavigationService.Navigate(new Page2(new Page2ViewModel(player)));
-        }
+        
     }
 }

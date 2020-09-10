@@ -10,6 +10,6 @@
 
     <Grid>
         <TextBlock Text="Nu är sida 1 laddad. Den har inga indataparametrar" />
-        <Button x:Name="GotoPage2" Content="Gå till sida 2" Click="GotoPage2_Click" />
+        <Button Content="Gå till sida 2 med specifik modell" Command="{Binding NavigationCommand}"/>
     </Grid>
 </Page>
