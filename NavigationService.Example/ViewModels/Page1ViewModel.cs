@@ -16,7 +16,9 @@ namespace NavigationService.Example
 
         public void GotoPage()
         {
-            var page = new Page1();
+            var player = new Person { Firstname = "Erik", Lastname = "Öberg" };
+            var model = new Page2ViewModel(player);
+            var page = new Page2(model);
             navigationService.Navigate(page);
         }
 
