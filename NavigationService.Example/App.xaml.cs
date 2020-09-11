@@ -8,7 +8,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Navigation;
 
-namespace NavigationService.Example
+namespace Navigering.Example
 {
     /// <summary>
     /// Interaction logic for App.xaml

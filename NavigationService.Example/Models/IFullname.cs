@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace NavigationService.Example.Models
+namespace Navigering.Example.Models
 {
     public interface  IFullname
     {

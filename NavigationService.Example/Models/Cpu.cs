@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using NavigationService.Example.Models;
+using Navigering.Example.Models;
 
-namespace NavigationService.Example
+namespace Navigering.Example
 {
     public class Cpu : IFullname
     {

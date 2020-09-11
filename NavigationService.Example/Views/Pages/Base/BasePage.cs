@@ -1,6 +1,6 @@
 ﻿using System.Windows.Controls;
 
-namespace NavigationService.Example
+namespace Navigering.Example
 {
     public class BasePage<VM> : Page where VM : BaseViewModel, new()
     {

@@ -10,9 +10,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using NavigationService.Example.Models;
+using Navigering.Example.Models;
 
-namespace NavigationService.Example
+namespace Navigering.Example
 {
     /// <summary>
     /// Interaction logic for Page1.xaml

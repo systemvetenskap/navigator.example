@@ -1,8 +1,8 @@
 ﻿using System.Windows.Input;
 using System.Windows.Media;
-using NavigationService.Example.Models;
+using Navigering.Example.Models;
 
-namespace NavigationService.Example
+namespace Navigering.Example
 {
     public class Page1ViewModel : BaseViewModel
     {

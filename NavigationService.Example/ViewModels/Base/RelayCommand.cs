@@ -3,7 +3,7 @@ using System.Windows.Input;
 /// <summary>
 /// Definierar vilken action (metod) som ska köras på givet kommando
 /// </summary>
-namespace NavigationService.Example
+namespace Navigering.Example
 {
     class RelayCommand : ICommand
     {
