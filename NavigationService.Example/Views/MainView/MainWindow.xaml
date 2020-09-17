@@ -1,19 +1,20 @@
-﻿<Window x:Class="NavigationService.Example.MainWindow"
+﻿<Window x:Class="PageNavigation.Example.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:NavigationService.Example"
+        xmlns:local="clr-namespace:PageNavigation.Example"
         mc:Ignorable="d"
-        Title="Huvudsida" Height="450" Width="800">
+        Title="{Binding Title}" Height="450" Width="800">
     <Grid>
-        <StackPanel>
+        <StackPanel Margin="45">
             <TextBlock Text="Detta är huvudsidan. Här skulle ni kunna lägga en huvudmeny" />
-            <TextBlock Text="Har tre sidor som ni kan navigera till via knappar. Eller via respektive page" />
+            <TextBlock Text="Har två sidor som ni kan navigera till via knappar. Eller via respektive page" />
+            <TextBlock Text="Sida 2 använder parameter OCH sätter en specifik vymodell" />
+            <TextBlock Text="Om du istället går via Sida 1 är allt styrt via standard = tom vymodell (Som ändå fungerar)" />
             <WrapPanel>
-                <Button x:Name="GotoPage1" Content="Visa sida 1" MinWidth="34" Click="GotoPage1_Click"/>
-                <Button x:Name="GotoPage2" Content="Visa Sida 2 (tom konstruktor)"  MinWidth="34" Click="GotoPage2_Click"/>
-                <Button x:Name="GotoPage3" Content="Visa Sida 2 (som Cpu-spelare)"  MinWidth="34" Click="GotoPage3_Click"/>
+                <Button Command="{Binding NavigateToPageCommand}" Content="Visa sida 1" MinWidth="34"  Margin="5 5 2.5 5"/>
+                <Button Command="{Binding NavigateToPageByParameterCommand}" CommandParameter="{x:Static local:ApplicationPage.PlayGame}" Content="Visa Sida 2 (med parameter)"  MinWidth="34" Margin="2.5 5 2.5 5"/>
             </WrapPanel>
             <Frame x:Name="mainFrame" />
         </StackPanel>

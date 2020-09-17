@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace NavigationService.Example.Models
+namespace PageNavigation.Example.Models
 {
-    public interface  IFullname
+    public interface IFullname
     {
         public string Fullname { get; }
     }

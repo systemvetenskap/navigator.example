@@ -1,6 +1,6 @@
-﻿using NavigationService.Example.Models;
+﻿using PageNavigation.Example.Models;
 
-namespace NavigationService.Example
+namespace PageNavigation.Example
 {
     /// <summary>
     /// En person som implementerar ett interface som styr Fullname, men som inte kräver för- och efternamn

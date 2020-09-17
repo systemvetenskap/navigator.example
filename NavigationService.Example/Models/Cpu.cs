@@ -1,10 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using NavigationService.Example.Models;
+﻿using PageNavigation.Example.Models;
 
-namespace NavigationService.Example
+namespace PageNavigation.Example
 {
+   /// <summary>
+   /// Spelartyp CPU. Implementerar <see cref="IFullname"/>
+   /// </summary>
     public class Cpu : IFullname
     {
         public string Fullname { get; set; }

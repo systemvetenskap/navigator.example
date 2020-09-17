@@ -11,7 +11,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace NavigationService.Example
+namespace PageNavigation.Example
 {
     /// <summary>
     /// Interaction logic for Page2.xaml

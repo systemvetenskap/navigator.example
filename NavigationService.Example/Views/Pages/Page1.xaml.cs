@@ -10,9 +10,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using NavigationService.Example.Models;
+using PageNavigation.Example.Models;
 
-namespace NavigationService.Example
+namespace PageNavigation.Example
 {
     /// <summary>
     /// Interaction logic for Page1.xaml
@@ -22,13 +22,8 @@ namespace NavigationService.Example
         public Page1()
         {
             InitializeComponent();
+            DataContext = new Page1ViewModel();
         }
 
-        private void GotoPage2_Click(object sender, RoutedEventArgs e)
-        {
-            // med specifik vymodell i konstruktorn
-            IFullname player = new Person() { Firstname = "Erik", Lastname = "Öberg" };
-            NavigationService.Navigate(new Page2(new Page2ViewModel(player)));
-        }
     }
 }

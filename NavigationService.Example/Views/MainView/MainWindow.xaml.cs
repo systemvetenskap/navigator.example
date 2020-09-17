@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace NavigationService.Example
+namespace PageNavigation.Example
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -23,25 +23,7 @@ namespace NavigationService.Example
         public MainWindow()
         {
             InitializeComponent();
-        }
-
-        private void GotoPage1_Click(object sender, RoutedEventArgs e)
-        {
-            // använd navigation service
-            mainFrame.Navigate(new Page1());
-            // På sida ett hittar du ett anrop med en spelare
-        }
-
-        private void GotoPage2_Click(object sender, RoutedEventArgs e)
-        {
-            // utan indataparameter
-            mainFrame.Navigate(new Page2());
-        }
-
-        private void GotoPage3_Click(object sender, RoutedEventArgs e)
-        {
-            var player = new Cpu { Fullname = "R2D2" };
-            mainFrame.Navigate(new Page2(new Page2ViewModel(player)));
+            DataContext = new MainViewModel();
         }
     }
 }
