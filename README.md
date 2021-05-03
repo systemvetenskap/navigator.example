@@ -1,5 +1,5 @@
 # Navigering med Pages 
-Det här exemplet bygger på tanken att man har en MainWView i form av ett fönster (Window). I detta fönster finns en yta där olika sidor (pages) laddas in.
+Det här exemplet bygger på tanken att man har en MainView i form av ett fönster (Window). I detta fönster finns en yta där olika sidor (pages) laddas in.
 
 ```cs
 <Frame x:Name="mainFrame" />
